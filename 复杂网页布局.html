@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>复杂网页</title>
+    <style>
+      body {
+        margin: 0;
+        /* vh 是view height 既视窗高度的意思，100就是100%占满窗口高度 */
+        height: 100vh;
+        background-color: #eee;
+      }
+
+      .flex {
+        display: flex;
+      }
+
+      .flex1 {
+        flex: 1;
+      }
+
+      /*要使垂直方向生效必须要加上flex这个盒子*/
+      .column {
+        flex-direction: column;
+      }
+      .green {
+        background-color: wheat;
+      }
+      .mg8 {
+        margin: 8px;
+      }
+
+      .mgr8 {
+        margin-right: 8px;
+      }
+
+      .mgt8 {
+        margin-top: 8px;
+      }
+
+      .mgl8 {
+        margin-left: 8px;
+      }
+      .mgb8 {
+        margin-bottom: 8px;
+      }
+      .daohang {
+        padding: 10px;
+        border-bottom: 1px solid blue;
+      }
+
+      /*   */
+    </style>
+  </head>
+  <body class="flex">
+    <!-- 侧边栏 -->
+    <div class="green" style="width: 200px; z-index: 2">
+      <!-- 头像栏 -->
+      <div
+        class="flex"
+        style="
+          padding: 10px;
+          align-items: center;
+          justify-content: center;
+          border-bottom: 1px solid blue;
+        "
+      >
+        <img
+          src="picture/2.Frieren  Sousou no Frieren.jpg"
+          alt="李桑"
+          width="150"
+          height="80"
+        />
+
+        <div style="margin: 10px">李桑</div>
+      </div>
+      <!-- 导航栏 -->
+
+      <div style="text-align: center" class="flex column">
+        <div class="daohang">导航</div>
+
+        <div class="daohang">导航</div>
+        <div class="daohang">导航</div>
+        <div class="daohang">导航</div>
+      </div>
+    </div>
+    <!-- 主区域 -->
+    <div class="flex1 flex column">
+      <!-- 头部栏 -->
+      <div class="green" style="height: 100px; z-index: 1"></div>
+      <!-- 内容区 -->
+      <div style="overflow: auto" class="flex1 flex">
+        <!-- 左区 -->
+        <div style="flex: 3" class="flex column mg8">
+          <!-- 数据区 -->
+          <div class="flex" style="height: 100px">
+            <!-- 数据块 -->
+            <div class="flex1 green mgr8" style="height: 100px"></div>
+
+            <!-- 数据块 -->
+            <div class="flex1 green mgr8" style="height: 100px"></div>
+
+            <!-- 数据块 -->
+            <div class="flex1 green mgr8" style="height: 100px"></div>
+
+            <!-- 数据块 -->
+            <div class="flex1 green" style="height: 100px"></div>
+          </div>
+          <!-- 列表区 -->
+          <div class="flex1 flex column">
+            <!-- 列表项 -->
+            <div class="mgt8 green" style="height: 150px"></div>
+
+            <!-- 列表项 -->
+            <div class="mgt8 green" style="height: 150px"></div>
+
+            <!-- 列表项 -->
+            <div class="mgt8 green" style="height: 150px"></div>
+          </div>
+        </div>
+        <!-- 右区 -->
+        <div style="flex: 1" class="flex column mgt8 mgr8">
+          <!-- 提示区 -->
+          <div class="green" style="height: 150px"></div>
+
+          <!-- 消息区 -->
+          <div class="mgt8 mgb8 green" style="height: 300px"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
