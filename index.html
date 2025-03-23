@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>李桑的网站</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .boxa {
+        background-color: #f1f1f1;
+        text-align: center;
+
+        padding: 60px;
+
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+      }
+      .box {
+        background-color: #f1f1f1;
+        text-align: center;
+
+        padding: 60px;
+
+        font-size: 14px;
+      }
+      a {
+        margin: 10px;
+      }
+
+      .textcontent {
+        max-width: 700px;
+        margin: 20px auto;
+        text-align: center;
+        padding: 15px;
+        line-height: 1.7;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <img
+        src="picture/2.Frieren  Sousou no Frieren.jpg"
+        alt="李桑"
+        width="288"
+        height="162"
+      />
+    </div>
+
+    <div class="textcontent">
+      <p>你好啊</p>
+      <p>我是李桑</p>
+      <p>这是我的个人网页</p>
+      <p>这是我写的第一个个人网页</p>
+      <p>最近要做的事情有大英赛 考研 BIM毕业设计大赛 结构竞赛</p>
+      <p>还有一些我个人想要做的事情 ：blend cad</p>
+
+      <p style="margin: 25px">未来工作方向</p>
+
+      <p style="margin: 25px">近期要完成的事情（目标）: 大英赛结构 BIM大赛</p>
+
+      <a href="video.html" target="_blank"> 视频链接 </a>
+      <button id="dzs" onclick="dianzang">0</button>
+
+      <script>
+        dianzang();
+
+        {
+          let dzsbiaoq = window.document.getElementById("dzs");
+
+          let dzs = parseInt(dzsbiaoq.innerText);
+          let ne = dzs + 1;
+          dzsbiaoq.innerText = ne;
+          return;
+        }
+      </script>
+    </div>
+
+    <div class="boxa">
+      <p>我的网站</p>
+      <a href="tool.html" target="_blank"> 友情工具链接 </a>
+      <a href="TheEnglish.html" target="_blank"> 英语链接 </a>
+      <a href="康文昌.html" target="_blank"> 康文昌 </a>
+
+      <a
+        href="https://web.glodonedu.com/course/search?gid=3645961851390446848&mid=3683446255604488448"
+        target="_blank"
+      >
+        bimmake学习
+      </a>
+
+      <a href="C:\Users\liying\Desktop\blend\blend.html" target="_blank">
+        blend学习
+      </a>
+
+      <p>脑科学</p>
+    </div>
+  </body>
+</html>
